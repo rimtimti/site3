@@ -22,14 +22,11 @@ body {
 }
 
 .header {
-    padding-left: 230px;
-    padding-right: 230px;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
     align-content: center;
+    gap: 859px;
     background-color: #222222
 }
 
@@ -57,8 +54,8 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: space-between;
-    padding-right: 331px;
+    justify-content: flex-start;
+    gap: 64px;
 }
 
 .title__text {
