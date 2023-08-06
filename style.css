@@ -79,6 +79,10 @@ body {
     font-weight: 700;
 }
 
+.colortext {
+    color: #F16D7F;
+}
+
 .categories {
     padding-top: 65px;
     padding-bottom: 96px;
