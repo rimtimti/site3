@@ -45,6 +45,11 @@ body {
     gap: 33px;
 }
 
+.button_menu {
+    background-color: #222222;
+    border: 0;
+}
+
 .title_content {
     background-color: #F1E4E6;
     display: flex;
@@ -148,7 +153,7 @@ body {
 .content {
     display: flex;
     width: 360px;
-    padding: 24px 16px;
+    padding: 24px 0px 24px 16px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -256,16 +261,17 @@ body {
         height: 116px;
     }
 
+    .title_4 {
+        color: #9F9F9F;
+        font-size: 14px;
+        margin-top: 3px;
+        margin-bottom: 73px;
+    }
+
     .products {
         display: grid;
         gap: 16px;
         grid-template-columns: repeat(2, 360px);
-        justify-content: center;
-    }
-
-    .product__img {
-        width: 360px;
-        height: 420px;
     }
 
     .button {
@@ -279,7 +285,6 @@ body {
     }
 
     .up_text {
-        /* padding: 60px; */
         position: absolute;
         top: 60px;
         bottom: 60px;
@@ -293,7 +298,6 @@ body {
     }
 
     .up_text_big {
-        /* padding: 60px; */
         position: absolute;
         top: 33px;
         bottom: 33px;
