@@ -22,16 +22,18 @@ body {
 }
 
 .header {
+    height: 75px;
     flex-wrap: wrap;
-    gap: 859px;
+    gap: 50%;
     background-color: #222222
 }
 
 .header__logo__search {
+    width: 168px;
     margin-top: 18px;
     margin-bottom: 20px;
     display: flex;
-    gap: 41px;
+    gap: 39px;
 }
 
 .search_icon {
@@ -51,29 +53,28 @@ body {
 }
 
 .title_content {
+    height: 764px;
     background-color: #F1E4E6;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-end;
     justify-content: flex-start;
-    gap: 64px;
+    gap: 63px;
 }
 
 .title__text {
-    margin-bottom: 381px;
+    margin-bottom: 380px;
     display: flex;
     gap: 16px;
 }
 
 .title_1 {
-    width: 377px;
     font-size: 48px;
     font-weight: 900;
 }
 
 .title_2 {
-    width: 377px;
     font-size: 32px;
     font-weight: 700;
 }
@@ -170,9 +171,9 @@ body {
     flex-wrap: wrap;
     align-content: space-around;
     flex-direction: column;
-    padding-top: 25px;
-    padding-bottom: 24px;
-    gap: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 12px;
 }
 
 .up_product {
@@ -223,6 +224,7 @@ body {
 }
 
 .price {
+    margin-top: 6px;
     color: #F16D7F;
     font-size: 16px;
     font-weight: 400;
@@ -230,7 +232,7 @@ body {
 
 .button {
     margin-top: 48px;
-    margin-bottom: 60px;
+    margin-bottom: 95px;
     padding: 15px 39px 14px 39px;
     color: #F26376;
     font-size: 16px;
@@ -294,6 +296,7 @@ body {
     width: 100%;
     height: 448px;
     position: relative;
+    object-fit: cover;
 }
 
 .white_footer {
@@ -312,15 +315,17 @@ body {
     gap: 223px;
     justify-content: center;
     flex-wrap: nowrap;
+    align-items: center;
 }
 
 .left_content {
-    margin-top: 97px;
     width: 360px;
-    height: 225px;
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    gap: 30px;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .women_smile {
@@ -328,10 +333,7 @@ body {
 }
 
 .text_after_smile {
-    width: 360px;
-    margin-top: 30px;
     margin-bottom: 60px;
-    height: 99px;
     color: #222224;
     text-align: center;
     font-size: 20px;
@@ -346,8 +348,6 @@ body {
 }
 
 .right_content {
-    margin-bottom: 156px;
-    margin-top: 150px;
     width: 557px;
     height: 142px;
     color: #222224;
@@ -367,7 +367,6 @@ body {
 
 .right_content_text {
     font-size: 18px;
-    line-height: 167.2%;
     font-weight: 400;
     margin-bottom: 32px;
 }
@@ -395,6 +394,7 @@ body {
 
 .email_input {
     padding-left: 22px;
+    padding-right: 16px;
     width: 256px;
     height: 49px;
     background-color: #E1E1E1;
@@ -407,16 +407,15 @@ body {
 }
 
 .down_footer {
-    padding-top: 24px;
-    padding-bottom: 23px;
+    height: 79px;
     background-color: #222224;
     display: flex;
-    gap: 650px;
+    gap: calc(100% / 2 - 50px);
     justify-content: center;
+    align-items: center;
 }
 
 .brand {
-    width: 332px;
     padding-top: 6px;
     padding-bottom: 7px;
     color: #FBFBFB;
@@ -454,7 +453,7 @@ body {
 
     .header {
         display: flex;
-        gap: 424px;
+        gap: calc(50% - 24px);
     }
 
     .header__menu {
@@ -567,8 +566,8 @@ body {
     }
 
     .button {
-        margin-top: 33px;
-        margin-bottom: 71px;
+        margin-top: 32px;
+        margin-bottom: 64px;
     }
 
     .offers {
@@ -586,20 +585,26 @@ body {
         height: 614px;
     }
 
-    .white_footer_content {
-        height: 614px;
-        gap: 48px;
-        flex-wrap: wrap;
+    .down_footer {
+        gap: calc(100% / 2 - 70px);
     }
 
-    .left_content {
-        margin-top: 64px;
+    .white_footer_content {
+        height: 614px;
+        gap: 42px;
+        padding-top: 65px;
+
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: normal;
+    }
+
+    .text_after_smile {
+        margin-bottom: 35px;
     }
 
     .right_content {
-        margin-top: 0px;
-        margin-bottom: 140px;
-        width: 557px;
         height: 137px;
     }
 
@@ -607,13 +612,6 @@ body {
         margin-bottom: 27px;
     }
 
-    .down_footer {
-        gap: 305px;
-    }
-
-    .brand {
-        width: 251px;
-    }
 }
 
 @media (max-width: 767px) {
@@ -625,7 +623,7 @@ body {
 
     .header {
         display: flex;
-        gap: calc(100% - 175px);
+        gap: calc(50% - 42px);
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -648,22 +646,30 @@ body {
     }
 
     .title_content {
+        height: 363px;
         display: flex;
         justify-content: center;
     }
 
     .title__text {
+        height: 66px;
         margin-top: 148px;
         margin-bottom: 149px;
         display: flex;
         gap: 15px;
     }
 
+    .redline {
+        height: 61px;
+    }
+
     .title_1 {
+        font-size: 38px;
         width: 100%;
     }
 
     .title_2 {
+        font-size: 20px;
         width: 100%;
     }
 
@@ -672,7 +678,7 @@ body {
         padding-bottom: 64px;
         display: grid;
         gap: 32px;
-        grid-template-columns: repeat(1, calc(100% - 16px));
+        grid-template-columns: repeat(1, calc(100% - 30px));
         justify-content: center;
     }
 
@@ -762,18 +768,31 @@ body {
         gap: 13px;
     }
 
-    .white_footer_content {
-        width: 100%;
+    .offers {
+        padding-bottom: 81px;
     }
 
-    .left_content {
+    .back {
+        height: 550px;
+    }
+
+    .white_footer {
+        height: 550px;
+    }
+
+    .white_footer_content {
         width: 100%;
+        height: 550px;
+        padding-top: 59px;
+        gap: 60px;
     }
 
     .text_after_smile {
         width: calc(100% - 32px);
         font-size: 18px;
+        margin-bottom: 0px;
     }
+
 
     .italic {
         color: #222224;
@@ -781,7 +800,7 @@ body {
     }
 
     .right_content {
-        width: 100%;
+        width: calc(100% - 16px);
     }
 
     .right_content_subscribe {
@@ -822,10 +841,10 @@ body {
     }
 
     .down_footer {
-        padding-top: 43px;
+        padding-top: 50px;
         padding-bottom: 9px;
         display: flex;
-        gap: 40px;
+        gap: 34px;
         flex-direction: column-reverse;
         align-items: center;
     }
